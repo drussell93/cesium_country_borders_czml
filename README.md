@@ -1,28 +1,6 @@
-# Shapefile to CZML Conversion Guide
+# Angular Usage
 
-## Complete Step-by-Step Process for Converting Natural Earth Shapefiles to Cesium CZML Format
-
-This guide provides the exact process used to convert Natural Earth country border shapefiles (110m, 50m, and 10m resolutions) to accurate CZML format for use in Cesium applications.
-
----
-
-## Table of Contents
-
-0. [Angular Usage] (#angular-usage)
-1. [Prerequisites](#prerequisites)
-2. [Understanding the Problem](#understanding-the-problem)
-3. [Source Data](#source-data)
-4. [Conversion Process](#conversion-process)
-5. [Python Script](#python-script)
-6. [Validation](#validation)
-7. [Results](#results)
-8. [Troubleshooting](#troubleshooting)
-
----
-
-## Angular Usage
-
-### Using the CZML files
+## Using the CZML files
 Place the CZML files in your assets directory and load into Cesium as follows:
 ```typescript
 const bordersPromise = Cesium.CzmlDataSource.load('assets/imagery/borders/countryborders.czml');
@@ -34,7 +12,28 @@ bordersPromise.then(function(dataSource) {
 ```
 
 ### Note
-The provided CZML files are not perfect. You can re-create the files and perform accuracy, optimization, and other improvements following steps 1-8 below. 
+The provided CZML files are not perfect. You can re-create the files and perform accuracy, optimization, and other improvements following the guide below:
+
+# Shapefile to CZML Conversion Guide
+
+## Complete Step-by-Step Process for Converting Natural Earth Shapefiles to Cesium CZML Format
+
+This guide provides the exact process used to convert Natural Earth country border shapefiles (110m, 50m, and 10m resolutions) to accurate CZML format for use in Cesium applications.
+
+---
+
+## Table of Contents
+
+1. [Prerequisites](#prerequisites)
+2. [Understanding the Problem](#understanding-the-problem)
+3. [Source Data](#source-data)
+4. [Conversion Process](#conversion-process)
+5. [Python Script](#python-script)
+6. [Validation](#validation)
+7. [Results](#results)
+8. [Troubleshooting](#troubleshooting)
+
+---
 
 ## Prerequisites
 
