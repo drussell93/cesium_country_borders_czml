@@ -56,7 +56,7 @@ This guide provides the exact process used to convert Natural Earth country bord
 
 ### Required Files
 
-Download Natural Earth shapefiles from [Natural Earth Data](https://www.naturalearthdata.com/downloads/):
+Download Natural Earth shapefiles from [Natural Earth Data](https://www.naturalearthdata.com/downloads/)
 
 ---
 
@@ -68,7 +68,7 @@ When converting shapefiles to CZML, you might encounter these issues:
 
 1. **Random Connecting Lines**: If polygon parts aren't properly closed, you'll see lines connecting separate regions
 2. **Multi-part Polygons**: Countries with islands (Indonesia, USA, etc.) have multiple polygon parts that need separate handling
-3. **File Size**: Raw conversion creates very large files that need optimization
+3. **File Size**: Raw conversion creates very large files which can be reduced via optimization methods
 4. **Coordinate Format**: Cesium requires radians, not decimal degrees
 
 ### The Solution
